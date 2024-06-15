@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Log-In"
+        android:textSize="@dimen/LogIn_Text_Size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/LogIn_Text_MarginTop"
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_LBL_LogIn"
+        android:layout_marginTop="@dimen/Input_MarginTop"
+        android:hint="Password"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_TIET_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_Log_In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log-In"
+        android:layout_centerInParent="true"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_Bluetooth_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Bluetooth Services: X"
+        android:textSize="@dimen/Status_Text_Size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/Status_Text_MarginTop"
+        android:layout_below="@+id/main_BTN_Log_In"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_North"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="North: X"
+        android:textSize="@dimen/Status_Text_Size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/Status_Text_MarginTop"
+        android:layout_below="@+id/main_LBL_Bluetooth_services"
+
+       />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_BatteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Battery: 0%"
+        android:textSize="@dimen/Status_Text_Size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/Status_Text_MarginTop"
+        android:layout_below="@+id/main_LBL_North"
+
+        />
+</RelativeLayout>

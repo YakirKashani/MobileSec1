@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Status_Text_Size">15sp</dimen>
+    <dimen name="Status_Text_MarginTop">20dp</dimen>
+    <dimen name="LogIn_Text_Size">30sp</dimen>
+    <dimen name="Input_MarginTop">110dp</dimen>
+    <dimen name="LogIn_Text_MarginTop">20dp</dimen>
+    <dimen name="Welcome_Text_Size">50sp</dimen>
+</resources>
